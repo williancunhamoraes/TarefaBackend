@@ -1,4 +1,5 @@
 Gerenciador de Tarefas — Full Stack
+
 Aplicação full stack para gerenciamento de tarefas, desenvolvida como desafio técnico.
 Possui backend em Spring Boot, frontend em Angular e integração com banco de dados relacional (H2 em memória para desenvolvimento).
 
