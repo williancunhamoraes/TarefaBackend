@@ -1,4 +1,4 @@
-# 📘 Gerenciador de Tarefas — Full Stack
+# 📘 Gerenciador de Tarefas — Full Stack ( branch MASTER )
 
 Aplicação para gerenciamento de tarefas, desenvolvida como **desafio técnico**.  
 Possui **backend em Spring Boot** e integração com banco de dados relacional (**H2 em memória para desenvolvimento**).
@@ -32,7 +32,7 @@ Permitir **cadastro, listagem, atualização e exclusão** de tarefas.
 - CSS 
 
 ### **DevOps**
-- Git (versionamento)
+- Git (versionamento) - utilizar master
 
 
 ## 🗂 Modelo de Dados
