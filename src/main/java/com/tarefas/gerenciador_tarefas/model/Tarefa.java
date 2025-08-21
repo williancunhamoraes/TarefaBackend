@@ -3,6 +3,9 @@ package com.tarefas.gerenciador_tarefas.model;
 import com.tarefas.gerenciador_tarefas.model.enums.StatusTarefa;
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
+
 import java.time.LocalDateTime;
 
 @Entity
@@ -28,9 +31,11 @@ public class Tarefa {
     @Column(nullable = false, length = 20)
     private StatusTarefa status;
 
-    @Column(name = "data_criacao", nullable = false)
+    @CreationTimestamp
+    @Column(name = "data_criacao", nullable = false, updatable = false)
     private LocalDateTime dataCriacao;
 
+    @UpdateTimestamp
     @Column(name = "data_atualizacao")
     private LocalDateTime dataAtualizacao;
 
