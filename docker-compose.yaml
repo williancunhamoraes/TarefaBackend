@@ -1,0 +1,25 @@
+services:
+  oracle:
+    image: gvenzl/oracle-xe:21.3.0
+    container_name: oracle-xe
+    ports:
+      - "1521:1521"   # Listener
+      - "5500:5500"   # EM Express (opcional)
+    environment:
+      ORACLE_PASSWORD: admin_password         # senha SYSTEM/PDBADMIN
+      APP_USER: app_user                      # será criado automaticamente
+      APP_USER_PASSWORD: app_password
+      # NLS_LANG: AMERICAN_AMERICA.AL32UTF8   # opcional
+    volumes:
+      - oracle-data:/opt/oracle/oradata
+      - ./docker/oracle/init:/container-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD", "bash", "-lc", "echo 'select 1 from dual;' | sqlplus -s system/${ORACLE_PASSWORD}@//localhost:1521/XEPDB1"]
+      interval: 20s
+      timeout: 10s
+      retries: 10
+      start_period: 40s
+    restart: unless-stopped
+
+volumes:
+  oracle-data:

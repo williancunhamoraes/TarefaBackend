@@ -21,19 +21,18 @@ Permitir **cadastro, listagem, atualização e exclusão** de tarefas.
 - Java **21**
 - Spring Boot **3.x**
 - Spring Data JPA + Hibernate
-- Banco de dados **H2** (desenvolvimento/testes) / **Oracle** (produção)
+- Banco de dados **Oracle** 
 - **MapStruct** (mapeamento DTO ↔ Entidade)
 - **JUnit 5 + Mockito + Spring Test** (testes unitários e integração)
 - Maven **3.9+**
 
 ### **Frontend**
-- Angular **16+**
+- Angular 
 - TypeScript
-- CSS puro
+- CSS 
 
 ### **DevOps**
 - Git (versionamento)
-- Jenkins (pipeline de CI/CD)
 
 
 ## 🗂 Modelo de Dados
@@ -53,6 +52,8 @@ Permitir **cadastro, listagem, atualização e exclusão** de tarefas.
 ---
 
 ## 🚀 Como Executar
+
+- ✅ **Rodar docker-compose na raiz do projeto para subir banco Oracle**
 
 ### 🔹 1. Backend
 ```bash
