@@ -53,7 +53,8 @@ Permitir **cadastro, listagem, atualização e exclusão** de tarefas.
 
 ## 🚀 Como Executar
 
-- ✅ **Rodar docker-compose na raiz do projeto para subir banco Oracle**
+- ✅ **Rodar docker-compose.yaml na raiz do projeto para subir banco Oracle**
+- ✅ **Acesse raiz do projeto e execute o comando docker-compose up**
 
 ### 🔹 1. Backend
 ```bash
